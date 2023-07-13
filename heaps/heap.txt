@@ -1,0 +1,19 @@
+A heap is a specialized tree-based data structure that satisfies the heap property. A heap is commonly used to implement priority queues and provides efficient operations for adding, removing, and accessing the highest (or lowest) priority element.
+
+In computer science, a heap is usually implemented as a binary heap, which is a complete binary tree where each node satisfies the heap property. The heap property states that for a max heap, each parent node has a value greater than or equal to its children, while for a min heap, each parent node has a value less than or equal to its children.
+
+A binary heap can be visualized as a binary tree, where the values are stored in the nodes, and the shape of the tree is maintained such that it is complete from left to right at each level. The heap property ensures that the highest (or lowest) priority element is always at the root of the tree.
+
+The main operations on a heap include:
+
+1. Insertion: Adding a new element to the heap while maintaining the heap property. This operation typically has a time complexity of O(log n), where n is the number of elements in the heap.
+2. Extraction: Removing the highest (or lowest) priority element from the heap. This operation also maintains the heap property and usually has a time complexity of O(log n).
+3. Peek: Accessing the highest (or lowest) priority element without removing it. This operation has a time complexity of O(1).
+
+Heaps are often implemented as arrays, where the elements of the heap are stored in a compact manner, and the parent-child relationships are determined using indices. The array representation allows for efficient memory usage and simpler implementation compared to other tree structures.
+
+Heaps find applications in various algorithms and data structures, such as Dijkstra's algorithm, priority queues, heap sort, and more. They provide an efficient way to handle elements with priorities and enable fast access to the most important element in a collection.
+
+It's important to note that the term "heap" can also refer to the dynamic memory allocation system in programming languages, but that usage is unrelated to the data structure discussed here.
+
+Complete binary tree : All nodes at every level is completly filled and last level may be incomplete but node should be filled from lrft.
