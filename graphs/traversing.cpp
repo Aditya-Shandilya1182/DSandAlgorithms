@@ -6,7 +6,7 @@ using namespace std;
 // Depth-First Search algorithm
 void DFSUtil(vector<vector<int>>& adjList, int currentVertex, vector<bool>& visited) {
     visited[currentVertex] = true;
-    cout << currentVertex << " "; // Process the current vertex
+    cout << currentVertex << " "; 
 
     for (int neighbor : adjList[currentVertex]) {
         if (!visited[neighbor]) {
@@ -40,7 +40,7 @@ void BFS(vector<vector<int>>& adjList, int startVertex) {
         q.pop();
         cout << currentVertex << " "; // Process the current vertex
 
-        // Enqueue all the unvisited neighbors of the current vertex
+        
         for (int neighbor : adjList[currentVertex]) {
             if (!visited[neighbor]) {
                 visited[neighbor] = true;
